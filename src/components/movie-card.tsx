@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Image, Heading, Text, Badge, Flex, IconButton } from '@chakra-ui/react';
+import { Box, Image, Heading, Text, Badge, Flex } from '@chakra-ui/react';
 import { FaHeart, FaRegHeart } from 'react-icons/fa';
 import { Link as RouterLink } from 'react-router-dom';
 import { Movie } from '../types';
