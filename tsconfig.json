@@ -3,7 +3,7 @@
     "target": "ES2020",
     "lib": ["DOM", "DOM.Iterable", "ESNext"],
     "module": "ESNext",
-    "moduleResolution": "Bundler",
+    "moduleResolution": "node",
     "strict": true,
     "jsx": "react-jsx",
     "incremental": true,
@@ -11,6 +11,7 @@
     "forceConsistentCasingInFileNames": true,
     "esModuleInterop": true,
     "isolatedModules": true,
+    "types": ["@chakra-ui/react", "node"], // ✅ Fixed comma here
     "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"]
