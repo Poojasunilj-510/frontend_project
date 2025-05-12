@@ -1,6 +1,5 @@
 import React from 'react';
-import { ChakraProvider } from '@chakra-ui/react';
-import { extendTheme } from '@chakra-ui/theme-utils'; // ✅ Correct import for v3+
+import { ChakraProvider, ThemeConfig, extendTheme } from '@chakra-ui/react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import { MoviesProvider } from './context/movies-context';
@@ -9,7 +8,13 @@ import HomePage from './pages/home-page';
 import FavoritesPage from './pages/favorites-page';
 import MovieDetailPage from './pages/movie-detail-page';
 
+const config: ThemeConfig = {
+  initialColorMode: 'light',
+  useSystemColorMode: false,
+};
+
 const theme = extendTheme({
+  config,
   fonts: {
     body: 'Inter, system-ui, sans-serif',
     heading: 'Inter, system-ui, sans-serif',
@@ -35,7 +40,7 @@ const theme = extendTheme({
       },
     },
   },
-}) as any; // ✅ Fix type error
+});
 
 function App() {
   return (

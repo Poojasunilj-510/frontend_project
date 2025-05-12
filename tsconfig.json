@@ -11,7 +11,7 @@
     "forceConsistentCasingInFileNames": true,
     "esModuleInterop": true,
     "isolatedModules": true,
-    "types": ["@chakra-ui/react", "node"], // ✅ Fixed comma here
+    "types": ["@chakra-ui/react", "node"], // ✅ comma fixed
     "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"]
